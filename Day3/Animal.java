@@ -46,14 +46,19 @@ public class Animal extends Desc
 {
 public static void main(String[] args)
 {
-    Desc[] a =new Desc[10];
-    int i=-1;
+  Scanner sc=new Scanner(System.in); 
+   Desc[] a =new Desc[10];
+    int i=-1,j;
    do
    {
     ++i;
     a[i]=new Desc();
+    a[i].get();
+   System.out.println(Desc.count+" Animals created");
+    System.out.println("Do You want to continue? 1.Yes\n2.No");
+   j=sc.nextInt();
    }
-   while(a[i].get());
+   while(j==1);
    a[0].disp();
 }
 } 
