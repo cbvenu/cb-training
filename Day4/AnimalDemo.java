@@ -112,7 +112,6 @@ public class AnimalDemo{
 		Console cons=System.console();
 		int n;
 		char ch;
-		Bat obj=new Bat();
 		do{
 			System.out.println("Enter a new Animal...\nWhich animal?");
 			n=findAnimal(); 
