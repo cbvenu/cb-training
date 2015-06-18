@@ -46,7 +46,7 @@ System.out.println("Given List:");
 for(int k=0;k<a.size();k++)
 System.out.println(a.get(k));
 System.out.println("\nAfter Mapping\n");
-Map<String,ArrayList> m=new HashMap<String,ArrayList>();
+Map<String,ArrayList> m=new TreeMap<String,ArrayList>();
 /*Comparator<String> strcomp=new Comparator<String>()
 {
  public int compare(String a,String b){ return a.compareTo(b);}};*/
