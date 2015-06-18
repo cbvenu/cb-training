@@ -20,5 +20,8 @@ public static void main (String[] args)
  Sample n=new Sample();
   n.disp();
  n.mem();
+  int a=10;
+  System.out.println(sizeof(a));
+
 }
 } 
