@@ -1,0 +1,38 @@
+{
+"Details":
+    [
+     {
+        "Name": "venugopal",
+        "Address": "chennai",
+        "Phone": {
+                "Home": 8122370690,
+                "Work": 9445767216,
+                "Mobile":123456
+                 }
+            
+        },
+        
+   {
+        "Name": "gopal",
+        "Address": "salem",
+        "Phone": {
+                "Home": 223706,
+                "Work": 9467216,
+                "Mobile":1233445
+                 }
+            
+        },
+        
+ {
+        "Name": "venkatesh",
+        "Address": "chennai",
+        "Phone": {
+                "Home": 1111190,
+                "Work": 22267216,
+ 		"Mobile": 
+                 }
+            
+        }
+        
+ ]
+}

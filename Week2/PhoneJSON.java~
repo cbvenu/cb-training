@@ -1,0 +1,81 @@
+import java.util.*;
+import java.lang.*;
+import org.json.simple.*;
+import org.json.simple.parser.*;
+import java.io.*;
+
+class Person
+{
+ String name,address;
+ Map numbers;
+ Person(String name, String adr,Map a)
+ {
+ this.name=new String(name);
+ this.address=new String(adr);
+ numbers=new HashMap(a);
+ } 
+
+public void display()
+{
+ System.out.println("\nName : "+name);
+ System.out.println("Address :"+address);
+ System.out.println("Phone Numbers");
+ System.out.println(numbers);
+}
+
+public boolean namecheck(CharSequence s)
+{
+ /* if(name.contains(s))
+  return true;
+  else return false;*/
+ return name.contains(s);
+}
+public boolean numcheck(CharSequence s)
+{
+ //if(phone[0].contains(s) || phone[1].contains(s) || phone[2].contains(s))
+ return true;
+ //else 
+ //return false;
+}
+}
+class PhoneJSON
+{
+public static Person[] creatingPerson(JSONArray arr)
+{
+    Person[] p=new Person[arr.size()];
+   Map nums=new HashMap();
+   Iterator it=arr.iterator();
+   int i=0;
+    while(it.hasNext())
+   {
+        JSONObject temp=(JSONObject) it.next();
+        String name=new String(temp.get("Name").toString());
+        String adr=new String(temp.get("Address").toString());
+        JSONObject phone=(JSONObject)temp.get("Phone");
+        nums.put("Home",phone.get("Home"));
+	 nums.put("Work",phone.get("Work"));
+	 nums.put("Mobile",phone.get("Mobile"));
+      p[i++]=new Person(name,adr,nums);
+      
+   }
+return p;
+}
+public static void main(String[] args) throws Exception
+ {
+  
+JSONParser par=new JSONParser();
+ JSONObject n=(JSONObject)par.parse(new FileReader("/home/cb-venugopal/cb-training/Week2/Files/phone_input.json"));
+
+JSONArray arr=(JSONArray) n.get("Details");
+
+Person[] obj=creatingPerson(arr);
+
+CharSequence s="Ven";
+CharSequence b="8122370690";
+ for(int i=0;i<obj.length;i++)
+ {
+ if( obj[i].namecheck(s))
+  obj[i].display(); 
+}
+}
+}

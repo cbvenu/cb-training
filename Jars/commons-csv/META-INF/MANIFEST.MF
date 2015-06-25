@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Export-Package: org.apache.commons.csv;version="1.0.0.SNAPSHOT"
+Implementation-Title: Apache Commons CSV
+Built-By: kps
+Tool: Bnd-2.1.0.20130426-122213
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Specification-Title: Apache Commons CSV
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.csv
+X-Compile-Target-JDK: 1.5
+Implementation-Version: 1.0-SNAPSHOT
+Specification-Vendor: The Apache Software Foundation
+Bundle-Name: Apache Commons CSV
+Created-By: Apache Maven Bundle Plugin
+X-Compile-Source-JDK: 1.5
+Bundle-Vendor: The Apache Software Foundation
+Build-Jdk: 1.6.0_30
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1395927171863
+Bundle-ManifestVersion: 2
+Bundle-Description: The Apache Commons CSV library provides a simple i
+ nterface for reading and writingCSV files of various types.
+Bundle-DocURL: http://commons.apache.org/proper/commons-csv/
+Implementation-Build: trunk@r1578504; 2014-03-27 19:00:43+0530
+Specification-Version: 1.0-SNAPSHOT
+Include-Resource: META-INF/LICENSE.txt=LICENSE.txt,META-INF/NOTICE.txt
+ =NOTICE.txt
+Archiver-Version: Plexus Archiver
+
