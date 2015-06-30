@@ -1,0 +1,81 @@
+{
+  "configuration" :
+   [
+      {
+     "Column Name":"Customer Id",
+      "Values": "Customer Id"
+      },
+      {
+     "Column Name":"Subscription Id",
+      "Values": "Subscription Id"
+      },
+      {
+     "Column Name":"Invoice Id",
+      "Values": "Invoice Number"
+      },
+     {
+      "Column Name" :"Invoice Date",
+       "Values" :"Invoice Date",
+	"Format":"y-MM-d hh:mm:ss",     
+	  "ToFormat" : "MM/d/y hh:mm:ss"
+     },
+
+    {
+      "Column Name" :"Start Date",
+       "Values" :"Start Date",
+	"Format":"y-MM-d hh:mm:ss",       
+	"ToFormat" : "MM/d/y hh:mm:ss"
+     },
+      
+     {
+     "Column Name":"Amount",
+      "Values": "Amount"
+      },
+      {
+     "Column Name":"Status",
+      "Values": "Status"
+      },
+    {
+      "Column Name" :"Paid On",
+       "Values" :"Paid On",
+       "Format":"y-MM-d hh:mm:ss",
+       "ToFormat" : "MM/d/y hh:mm:ss"
+     },
+
+	{
+     "Column Name":"Next Retry",
+      "Values": "Next Retry"
+      },
+    
+     {
+     "Column Name":"Refunded Amount",
+      "Values": "Refunded Amount"
+      },
+     {
+     "Column Name":"Recurring",
+      "Values": "Recurring"
+      },
+     {
+     "Column Name":"First Invoice",
+      "Values": "First Invoice"
+      },
+     {
+     "Column Name":"Tax Total",
+      "Values": "Tax Total"
+      },
+
+     {
+       "Column Name":"Customer Details",
+       "Values":
+         {     
+                "First Name": "Customer First Name",
+                "Last Name" : "Customer Last Name",
+                "Email": "Customer Email",
+                "Company": "Customer Company"
+         }
+                
+     }
+     ]
+    
+    
+}

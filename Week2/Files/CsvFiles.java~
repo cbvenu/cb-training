@@ -7,7 +7,7 @@ class CsvFiles
  public static void main(String[] args) throws Exception
  {
   List<String> list=new ArrayList<String>();
-  CSVPrinter p = new CSVPrinter(new  FileWriter(new File("/home/cb-venugopal/cb-training/out.csv")),CSVFormat.EXCEL.withHeader("NUM","NAME","OLD"));
+  CSVPrinter p = new CSVPrinter(new  FileWriter(new File("/home/cb-venugopal/cb-training/out.csv")),CSVFormat.EXCEL.withHeader());
    Reader in =new FileReader("/home/cb-venugopal/cb-training/input.csv");
    CSVParser parser =new CSVParser (in, CSVFormat.EXCEL.withSkipHeaderRecord(true));  
 // Iterable<CSVRecord> r= CSVFormat.EXCEL.withHeader().parse(in)
